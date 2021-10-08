@@ -1,0 +1,192 @@
+.clients {
+    background-color: var(--section-background);
+    padding: var(--section-padding) 0;
+}
+.clients .main-heading h2 {
+    color: var(--secondary-color);
+}
+.clients .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width:767px) {
+    .clients .container {
+        flex-direction: column;
+    }
+}
+.clients .container .box{
+    flex-basis: 32%;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #777;
+}
+@media (max-width:767px) {
+    .clients .container .box:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.clients .container .box h3{
+    font-weight: normal;
+    padding: 15px 0;
+}
+.clients .container .box p:first-of-type{
+    color: var(--main-color);
+    font-size: 14px;
+}
+.clients .container .box p:last-of-type{
+    color: #777;
+    padding: 15px 0;
+}
+
+/* start subscribe  */
+.subscribe {
+    background-color: var(--secondary-color) ;
+    padding: var(--section-padding) 0;
+    text-align: center;
+    color: white;
+}
+.subscribe button{
+    border: 2px solid var(--main-color);
+    background: none;
+    padding: 10px 30px;
+    color: white;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.subscribe button:hover {
+    background-color: var(--main-color);
+}
+/* end subscribe  */
+
+/* start contact */
+.contact {
+    background-color: black;
+    padding: var(--section-padding) 0 0;
+}
+.contact .container{
+
+    padding: 0 0 50px 0;
+}
+.contact .container .box form{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+@media (max-width:767px) {
+    .contact .container .box form{
+        flex-direction: column;
+    }
+}
+.contact .container .box input:first-of-type,
+.contact .container .box input:nth-child(2){
+    background: none;
+    padding: 15px;
+    width: 49%;
+    border: none;
+    border-bottom: 2px solid white;
+    position: relative;
+    color: white;
+    outline: none;
+}
+@media (max-width:767px) {
+    .contact .container .box input:first-of-type,
+    .contact .container .box input:nth-child(2){
+        width: 100% ;
+    }
+}
+.contact .container .box input:first-of-type::before,
+.contact .container .box input:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 2px;
+    background-color: white;
+}
+.contact .container .box input:first-of-type::after,
+.contact .container .box input:nth-child(2)::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 2px;
+    background-color: white;
+}
+.contact .container .box textarea{
+    width: 100%;
+    margin-top: 70px;
+    background: none;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid white;
+    position: relative;
+    color: white;
+}
+.contact .container .box input[type="submit"]{
+    padding: 10px 30px;
+    background: none;
+    border: 1px solid var(--main-color);
+    color: white;
+    margin-top: 30px;
+    width: fit-content;
+    margin: 30px auto;
+    transition: .3s;
+    cursor: pointer;
+}
+.contact .container .box input[type="submit"]:hover{
+    background-color: var(--main-color);
+}
+/* end contact */
+
+/* start address  */
+.address {
+    background-color: var(--secondary-color);
+    position: relative;
+    height: 400px;
+}
+.address .awesome-address{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--main-color);
+    text-align: center;
+    width: 500px;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+}
+.address .awesome-address::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border: 15px solid var(--main-color);
+}
+.address .awesome-address p {
+    margin-bottom: 20px;
+}
+/* end address  */
+
+/* start footer  */
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+}
+.footer p{}
+.footer p span{
+    font-weight: bold;
+    color: var(--main-color);
+}
+/* end footer  */
